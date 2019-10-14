@@ -1,8 +1,9 @@
 <template>
   <div id="app">
+  <h1>Hangman! </h1>
     <div>
       <div>
-        {{ lives}}
+         Lives left : {{ lives}}
       </div>
       <div class="button" v-for="item in this.alphabet">
           <button v-on:click="click(item.letter), checkStatus()"> {{ item.letter }} </button>
@@ -62,6 +63,7 @@ export default {
         { letter: 'T' },
         { letter: 'U' },
         { letter: 'V' },
+        { letter: 'W'},
         { letter: 'X' },
         { letter: 'Y' },
         { letter: 'Z' },
